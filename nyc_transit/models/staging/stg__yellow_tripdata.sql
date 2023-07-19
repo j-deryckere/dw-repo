@@ -8,6 +8,7 @@ renamed as (select
 	trip_distance,
 	ratecodeid,
 	{{flag_to_bool("store_and_fwd_flag")}} as store_and_fwd_flag,
+	store_and_fwd_flag,
 	pulocationid,
 	dolocationid,
 	payment_type,

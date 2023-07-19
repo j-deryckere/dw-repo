@@ -1,8 +1,4 @@
-with source as (
-
-    select * from {{ source('main', 'bike_data') }}
-
-),
+with source as (select * from {{ source('main', 'bike_data') }}),
 
 renamed as (
 

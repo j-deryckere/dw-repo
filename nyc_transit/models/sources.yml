@@ -22,6 +22,12 @@ sources:
             tests:
               - not_null
               - dbt_expectations.expect_column_to_exist
+          - name: starttime
+            data_type: CHARACTER VARYING(256)
+          - name: stoptime
+            data_type: CHARACTER VARYING(256)
+          - name: start station id
+            data_type: CHARACTER VARYING(256)
           - name: start station name
             data_type: CHARACTER VARYING(256)
           - name: start station latitude
@@ -64,6 +70,8 @@ sources:
             tests:
               - not_null
               - dbt_expectations.expect_column_to_exist
+          - name: ended_at
+            data_type: CHARACTER VARYING(256)
           - name: start_station_name
             data_type: CHARACTER VARYING(256)
           - name: start_station_id
@@ -120,6 +128,22 @@ sources:
           - name: tmin
             description: "Minimum temperature (Fahrenheit or Celsius as per user preference, Fahrenheit to tenths on Daily Form pdf file"
             data_type: CHARACTER VARYING(256)
+          - name: name
+            data_type: CHARACTER VARYING(256)
+          - name: date
+            data_type: CHARACTER VARYING(256)
+          - name: awnd
+            data_type: CHARACTER VARYING(256)
+          - name: prcp
+            data_type: CHARACTER VARYING(256)
+          - name: snow
+            data_type: CHARACTER VARYING(256)
+          - name: snwd
+            data_type: CHARACTER VARYING(256)
+          - name: tmax
+            data_type: CHARACTER VARYING(256)
+          - name: tmin
+            data_type: CHARACTER VARYING(256)
           - name: filename
             data_type: CHARACTER VARYING(256)
 
@@ -173,6 +197,10 @@ sources:
           - name: dba
             description: "The “doing business as” name of the base"
             data_type: CHARACTER VARYING(256)
+          - name: base_name
+            data_type: CHARACTER VARYING(256)
+          - name: dba
+            data_type: CHARACTER VARYING(256)
           - name: dba_category
             data_type: CHARACTER VARYING(256)
           - name: filename
@@ -212,6 +240,16 @@ sources:
               - dbt_expectations.expect_column_to_exist
           - name: sr_flag
             description: "Indicates if the trip was a part of a shared ride chain offered by a High Volume FHV company (e.g. Uber Pool, Lyft Line). For shared trips, the value is 1. For non-shared rides, this field is null"
+            data_type: CHARACTER VARYING(256)
+          - name: pickup_datetime
+            data_type: TIMESTAMP
+          - name: dropoff_datetime
+            data_type: TIMESTAMP
+          - name: pulocationid
+            data_type: DOUBLE
+          - name: dolocationid
+            data_type: DOUBLE
+          - name: sr_flag
             data_type: INTEGER
           - name: affiliated_base_number
             data_type: CHARACTER VARYING(256)
@@ -347,6 +385,53 @@ sources:
                   values: ['Y', 'N']
                   config:
                     severity: warn
+            data_type: CHARACTER VARYING(256)
+          - name: dispatching_base_num
+            data_type: CHARACTER VARYING(256)
+          - name: originating_base_num
+            data_type: CHARACTER VARYING(256)
+          - name: request_datetime
+            data_type: TIMESTAMP
+          - name: on_scene_datetime
+            data_type: TIMESTAMP
+          - name: pickup_datetime
+            data_type: TIMESTAMP
+          - name: dropoff_datetime
+            data_type: TIMESTAMP
+          - name: pulocationid
+            data_type: BIGINT
+          - name: dolocationid
+            data_type: BIGINT
+          - name: trip_miles
+            data_type: DOUBLE
+          - name: trip_time
+            data_type: BIGINT
+          - name: base_passenger_fare
+            data_type: DOUBLE
+          - name: tolls
+            data_type: DOUBLE
+          - name: bcf
+            data_type: DOUBLE
+          - name: sales_tax
+            data_type: DOUBLE
+          - name: congestion_surcharge
+            data_type: DOUBLE
+          - name: airport_fee
+            data_type: DOUBLE
+          - name: tips
+            data_type: DOUBLE
+          - name: driver_pay
+            data_type: DOUBLE
+          - name: shared_request_flag
+            data_type: CHARACTER VARYING(256)
+          - name: shared_match_flag
+            data_type: CHARACTER VARYING(256)
+          - name: access_a_ride_flag
+            data_type: CHARACTER VARYING(256)
+          - name: wav_request_flag
+            data_type: CHARACTER VARYING(256)
+          - name: wav_match_flag
+            data_type: CHARACTER VARYING(256)
           - name: filename
             data_type: CHARACTER VARYING(256)
 

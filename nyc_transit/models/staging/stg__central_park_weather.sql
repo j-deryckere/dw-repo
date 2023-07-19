@@ -19,7 +19,6 @@ renamed as (
         filename
 
     from source
-
 )
 
 select * from renamed

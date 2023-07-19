@@ -11,4 +11,4 @@ renamed as (select
         filename
         from source)
 
-select * from renamed 
+select * from renamed
