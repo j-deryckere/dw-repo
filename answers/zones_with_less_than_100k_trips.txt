@@ -1,0 +1,29 @@
+┌───────────────────────────────────────────────┬──────────────┐
+│                     Zone                      │ count_star() │
+│                    varchar                    │    int64     │
+├───────────────────────────────────────────────┼──────────────┤
+│ Arden Heights                                 │        87820 │
+│ City Island                                   │        76991 │
+│ Breezy Point/Fort Tilden/Riis Beach           │        31520 │
+│ Rossville/Woodrow                             │        75021 │
+│ Newark Airport                                │        19301 │
+│ Randalls Island                               │        46132 │
+│ Broad Channel                                 │        15717 │
+│ Green-Wood Cemetery                           │        15292 │
+│ Marine Park/Floyd Bennett Field               │        35007 │
+│ Pelham Bay Park                               │        77580 │
+│ Inwood Hill Park                              │        89276 │
+│ Astoria Park                                  │        13699 │
+│ Crotona Park                                  │        58091 │
+│ Highbridge Park                               │        36593 │
+│ Freshkills Park                               │         7934 │
+│ Willets Point                                 │        22328 │
+│ Battery Park                                  │        49384 │
+│ Forest Park/Highland Park                     │        50841 │
+│ Jamaica Bay                                   │         1012 │
+│ Governor's Island/Ellis Island/Liberty Island │           90 │
+│ Great Kills Park                              │          600 │
+│ Rikers Island                                 │           84 │
+├───────────────────────────────────────────────┴──────────────┤
+│ 22 rows                                            2 columns │
+└──────────────────────────────────────────────────────────────┘
